@@ -34,6 +34,8 @@
 extern "C" {
 #endif
 
+void evhttp_get_request(struct evhttp *, evutil_socket_t, struct sockaddr *, ev_socklen_t);
+
 /* In case we haven't included the right headers yet. */
 struct evbuffer;
 struct event_base;
